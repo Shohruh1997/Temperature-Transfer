@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>652</width>
+    <height>225</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Temperature</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/icon/tempIcon.png</normaloff>:/icon/tempIcon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QObject
+{
+color: blue;
+background-color:#89a5ff;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>News701 BT</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel
+{
+color:black;
+}</string>
+        </property>
+        <property name="text">
+         <string>Выберите единицу температуры:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QRadioButton" name="CelsiyRadioButton">
+          <property name="styleSheet">
+           <string notr="true">QRadioButton
+{
+color:red;
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Цельсий °C</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="FarenRadioButton">
+          <property name="styleSheet">
+           <string notr="true">QRadioButton
+{
+color:red;
+}</string>
+          </property>
+          <property name="text">
+           <string>Фаренгейт F</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="KelvinRadioButton">
+          <property name="styleSheet">
+           <string notr="true">QRadioButton
+{
+color:red;
+}</string>
+          </property>
+          <property name="text">
+           <string>Кельвин K</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="TempLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit
+{
+background-color:#92ff90;
+
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="ClearPushButton">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+color:black;
+background-color:white;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>clear</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+color:black;
+background-color:white;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>»</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>News701 BT</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel
+{
+color:black;
+}</string>
+        </property>
+        <property name="text">
+         <string>Цельсий °C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <family>News701 BT</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel
+{
+color:black;
+}</string>
+        </property>
+        <property name="text">
+         <string>Фаренгейт F</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <family>News701 BT</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel
+{
+color:black;
+}</string>
+        </property>
+        <property name="text">
+         <string>Кельвин K</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="CelLineEdit">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+background-color:#92ff90;
+
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="FarLineEdit">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+background-color:#92ff90;
+
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="KelLineEdit">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+background-color:#92ff90;
+
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
